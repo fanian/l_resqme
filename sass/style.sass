@@ -1,0 +1,667 @@
+$f: 'conv_pfdintextcondpro-light', Sans-serif
+
+
+
+body
+  font-family: $f
+  background: white
+  min-width: 1200px
+  min-height: 200px
+  color: #1e1e1e
+
+*, *:before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  outline: none
+
+@import 'compass'
+@import "placeholderText"
+
+.wrapper
+  width: 1000px
+  margin: 0 auto
+  position: relative
+
+.fl
+  float: left
+
+.fr
+  float: right
+
+.cb
+  clear: both
+input.error, textarea.error
+  box-shadow: 0 0 5px red !important
+label.error
+  display: none !important
+
+
+  @include input-placeholder
+    color: #000000
+
+
+header
+  padding-top: 20px
+  background: #ffffff
+  background: url(../img/top_bg.png) center no-repeat
+  +background-size(cover)
+  height: 873px
+
+  nav
+    float: left
+    margin: 5px auto 0
+
+
+
+    ul
+      font-size: 18px
+      padding: 0
+      li
+        display: inline-block
+        float: left
+        margin-right: 15px
+        font-family: 'conv_pfdintextcondpro-lightital'
+        border-right: solid 1px
+        line-height: 1em
+        &:last-child
+          border: none
+        a
+          color: inherit
+          padding-right: 20px
+          &:hover
+            text-decoration: none
+
+  .addr
+    text-align: right
+    position: relative
+    margin-top: 5px
+    color: #fff
+    h3
+      font-size: 16px
+      font-weight: normal
+      margin: 0
+      padding-left: 10px
+      display: inline-block
+    h2
+      display: inline-block
+      font-size: 24px
+      font-weight: normal
+      margin: 0
+      font-family: 'Conv_MagistralC-Bold'
+      line-height: 1em
+      &:before
+        content: ""
+        background: url(../img/ico_phone.png) left no-repeat
+        width: 40px
+        height: 40px
+        position: absolute
+        top: 10px
+        left: -50px
+
+
+
+  .top
+
+    height: 740px
+    padding-top: 10px
+    position: relative
+    .form
+      width: 280px
+      height: 500px
+      margin-top: -50px
+
+      .caption
+        height: 230px
+        padding-top: 20px
+        +background(linear-gradient(60deg, #f55f5f 0%, #d13131 100%))
+
+        h3
+          margin-top: 0
+          margin-bottom: 0
+          font-size: 24px
+          font-weight: normal
+          text-align: center
+          font-family: 'Conv_MagistralC-Bold'
+          text-transform: uppercase
+          color: #ffffff
+        h4
+          margin-top: 10px
+          margin-bottom: 10px
+          font-size: 18px
+          text-align: center
+          font-weight: normal
+          text-transform: uppercase
+
+          color: #ffffff
+    .secondLine
+      margin-top: 10px
+      margin-bottom: 30px
+      .title
+        line-height: 1.4em
+        display: inline-block
+        width: 270px
+        font-size: 24px
+        font-family: 'Conv_MagistralC'
+        vertical-align: top
+        padding-top: 22px
+        margin-left: 28px
+        h2
+          margin: 0
+          font-weight: normal
+
+
+      span
+        color: #d23232
+      .logo
+        display: inline-block
+        p
+          margin: -15px 0 0
+      .logo1
+        display: inline-block
+        width: 120px
+        vertical-align: top
+        margin-top: 10px
+        margin-left: 10px
+        &.logo2
+          margin-left: 10px
+          margin-right: 15px
+          p
+            margin-top: 3px
+.price
+  position: absolute
+  top: -40px
+  left: 610px
+  +border-radius(70px)
+  +background-clip(padding-box)
+  background: rgb(245,140,0)
+  +background(linear-gradient(#fff5af 0%, #f9e163 100%))
+  width: 140px
+  height: 140px
+  font-size: 16px
+  text-align: center
+  line-height: 1.3em
+  padding-top: 50px
+  z-index: 1
+  span
+    font-size: 48px
+    font-family: 'Conv_MagistralBlackC'
+.timer
+  font-size: 14px
+  font-family: 'conv_segoeprintregular'
+  position: absolute
+  bottom: 30px
+  left: 50px
+  &:before
+    position: absolute
+    content: ""
+    background: url(../img/ico_timer.png)
+    width: 40px
+    height: 45px
+    top: -14px
+    left: -43px
+  &:after
+    position: absolute
+    content: ""
+    background: url(../img/arrow.png)
+    width: 111px
+    height: 41px
+    top: -5px
+    left: -5px
+.items_block
+  position: relative
+  margin-top: 60px
+  .shadow
+    position: absolute
+    top: 25px
+    left: 20px
+    z-index: 1
+  .item
+    margin-left: -28px
+    position: relative
+    float: left
+    &:first-child
+      margin-left: 0
+    h3
+      color: #fff
+      margin: 0
+      display: inline-block
+      font-family: Conv_MagistralC
+      font-weight: normal
+      font-size: 24px
+      position: absolute
+      top: 15px
+      left: 20px
+      text-transform: uppercase
+      text-align: right
+
+    h2
+      line-height: .74em
+      color: #fff
+      margin: 0
+      display: inline-block
+      position: absolute
+      bottom: 0
+      left: 45px
+      font-family: 'conv_pfdintextcondpro-medium'
+      font-size: 120px
+  .item2
+    h3
+      left: 50px
+    h2
+      left: 60px
+
+
+.f-nav
+  z-index: 9999
+  position: fixed
+  width: 100%
+  top: 0
+  background: rgba(245,140,0, 0.8)
+  bottom: auto
+  padding-bottom: 15px
+
+
+
+
+.counter
+  width: 285px
+  margin: auto auto 0
+  display: block
+  text-align: center
+
+  p
+    color: #ffffff
+    margin-bottom: 5px
+    margin-top: 3px
+    font-size: 14px
+    position: static
+    font-weight: normal
+    font-family: 'conv_segoeprintregular'
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    display: inline-block
+
+    li
+      float: left
+      margin: 0 15px
+      text-align: center
+      position: relative
+
+      span
+        +text-shadow(1px 1px 1px rgb(0, 0, 0))
+        display: block
+        font-size: 36px
+        padding-top: 5px
+        padding-bottom: 5px
+        padding-right: 3px
+        width: 60px
+        font-family: 'conv_pfdintextcondpro-regular'
+        color: #ffffff
+        +border-radius(10px)
+        +background-clip(padding-box)
+
+        background: #1d1d1d
+        +background(linear-gradient(#595959 0%, #3b3b3b 50%, #1d1d1d 50%, #1d1d1d 100%))
+
+
+
+
+
+
+
+
+.frm
+  height: 257px
+  padding-top: 15px
+
+  +background(linear-gradient(60deg, rgba(#d13131,0.2) 0%, rgba(#f55f5f, 0.2) 100%))
+
+  form
+    input
+      padding-left: 14px
+      width: 220px
+      height: 60px
+      background: #ffffff
+      display: block
+      margin: auto auto 10px
+      @include box-shadow(1px 2px 2px rgba(0,0,0,.8))
+      border: 2px solid #f7f2c5
+      +border-radius(5px)
+      +background-clip(padding-box)
+
+    .button
+      +border-radius(20px)
+      width: 240px
+      height: 80px
+      color: #000
+      text-transform: uppercase
+      display: block
+      margin: 12px auto auto
+      font-family: 'Conv_MagistralC-Bold'
+      font-size: 24px
+      border: none
+      +background-clip(padding-box)
+      +box-shadow(inset 0 -3px 0 rgba(250,220,40,.5))
+      +background(linear-gradient(#fff5af 0%, #f9db27 100%))
+      &:hover
+        +background(linear-gradient(#f9db27 0%, #fff5af 100%))
+
+
+
+
+  h4
+    text-align: center
+    color: #ffffff
+    margin: 5px 0 0
+    font-weight: normal
+    font-family: 'Conv_pfdintextcondpro-light'
+    font-size: 18px
+  h5
+    @extend h4
+    margin: 0
+    font-size: 24px
+    span
+      font-family: 'conv_pfdintextcondpro-regular'
+.glass_left
+  position: absolute
+  content: ""
+  background: url(../img/glass_left.png) no-repeat
+  width: 439px
+  height: 568px
+  z-index: 2
+  top: -10px
+  left: -360px
+.glass_right
+  position: absolute
+  content: ""
+  background: url(../img/glass_right.png) no-repeat
+  width: 439px
+  height: 568px
+  top: 100px
+  right: 0
+
+.resqme
+  h2
+    font-size: 60px
+    margin-top: -80px
+    margin-bottom: 20px
+    font-weight: normal
+    text-align: center
+    font-family: 'Conv_MagistralC'
+    span
+      font-family: 'Conv_MagistralC-Bold'
+      color: #d23232
+      span
+        color: #1e1e1e
+
+  .items
+    .item
+      text-align: center
+      display: inline-block
+      width: 200px
+      margin-left: 15px
+      &:first-child
+        margin-left: 0
+      h3
+        color: #d23232
+        text-transform: uppercase
+        font-family: 'Conv_MagistralC'
+        font-size: 18px
+      p
+        line-height: 1.5em
+        display: block
+        margin: 0 auto
+        width: 180px
+    img
+      &.ico_redArrow
+        display: inline-block
+        padding-top: 115px
+        vertical-align: top
+        margin-left: 40px
+        margin-right: 27px
+
+.acquaintance
+  background: url(../img/resq_bg.png) no-repeat center
+  +background-size(cover)
+  height: 788px
+  position: relative
+  .wrapper
+    margin-top: -165px
+
+  h2
+    font-size: 48px
+    margin-bottom: 20px
+    padding-top: 70px
+    font-weight: normal
+    text-align: center
+    font-family: 'Conv_MagistralC'
+    span
+      font-family: 'Conv_MagistralC-Bold'
+      color: #d23232
+      span
+        color: #1e1e1e
+  .video
+    position: relative
+    margin-bottom: 50px
+    .play
+      position: absolute
+      top: 35px
+      left: 75px
+    p
+      display: inline-block
+      font-family: 'Conv_SegoePrintRegular'
+      font-size: 14px
+      position: absolute
+      top: 130px
+      left: 70px
+      &:after
+        content: ""
+        background: url(../img/ico_arrowToLeft.png)
+        width: 111px
+        height: 41px
+        position: absolute
+        top: -8px
+        left: -30px
+  .acq_left
+    width: 650px
+    .img_acq_block
+      margin-bottom: 70px
+      .img_acq_left
+        display: inline-block
+        &:last-child
+          margin-right: 0
+    ul
+      width: 600px
+      list-style: none
+      padding-left: 0
+      margin-top: 5px
+      display: inline-block
+      li
+        margin-bottom: 10px
+    p
+      display: inline-block
+      width: 600px
+  h3
+    color: #d23232
+    text-transform: uppercase
+    font-family: 'Conv_MagistralC-Bold'
+    font-size: 24px
+    margin: 0
+  .acq_right
+    width: 300px
+    margin-top: -40px
+    .item
+      margin-top: 10px
+      &:last-child
+        margin-bottom: 10px
+      img
+        +border-radius(50%)
+
+
+      p
+        vertical-align: middle
+        width: 180px
+        display: inline-block
+        margin-left: 15px
+
+
+
+
+
+
+
+.mln
+  clear: both
+  h2
+    text-align: center
+    font-size: 45px
+    text-transform: uppercase
+    margin: 0
+    span
+      color: #ffffff
+      font-weight: bold
+      padding-top: 58px
+      width: 175px
+      height: 175px
+      display: inline-block
+      +border-radius(50%)
+      +background-clip(padding-box)
+      +background(linear-gradient(60deg, #f55f5f 0%, #d13131 100%))
+
+  .russia
+    background: url(../img/russia.png) left center no-repeat
+    height: 400px
+    width: 1030px
+    margin-left: -30px
+    .text
+      font-family: 'conv_pfdintextcondpro-regular'
+      h3
+
+        text-transform: uppercase
+        font-size: 24px
+        font-weight: normal
+        text-align: left
+      h4
+        font-weight: normal
+        text-align: left
+        font-size: 17px
+      ul
+        list-style: none
+        text-align: left
+        padding-left: 50px
+        li
+          display: block
+          width: 430px
+          height: 90px
+          padding-left: 80px
+          padding-right: 50px
+
+          &.mln1
+            background: url(../img/mln1.png) left top no-repeat
+          &.mln2
+            background: url(../img/mln2.png) left top no-repeat
+
+.bottom
+  .items_block
+    .shadow
+      top: 95px
+      left: 105px
+    .glass_bottom
+      position: absolute
+      top: 240px
+      left: 380px
+
+  .form
+    width: 280px
+    height: 500px
+    margin-top: -50px
+
+    .caption
+      height: 230px
+      padding-top: 20px
+      +background(linear-gradient(60deg, #f55f5f 0%, #d13131 100%))
+
+      h3
+        margin-top: 0
+        margin-bottom: 0
+        font-size: 24px
+        font-weight: normal
+        text-align: center
+        font-family: 'Conv_MagistralC-Bold'
+        text-transform: uppercase
+        color: #ffffff
+      h4
+        margin-top: 10px
+        margin-bottom: 10px
+        font-size: 18px
+        text-align: center
+        font-weight: normal
+        text-transform: uppercase
+
+        color: #ffffff
+
+footer
+  p
+    font-size: 16px
+    text-align: center
+    margin: 5px
+    &:last-child
+      margin-bottom: 15px
+.feedback
+  form
+    width: 300px
+    h3
+      text-align: center
+      font-size: 20px
+    input
+      @include border-radius(2px)
+      padding-left: 14px
+      width: 285px
+      height: 45px
+      background: #ffffff
+      display: block
+      margin: auto auto 10px
+      border: 1px solid darkgrey
+    button
+      @include border-radius(10px)
+      width: 285px
+      height: 68px
+      color: #59951d
+      +box-shadow(inset 0 -2px 0 rgba(70,130,10,.25))
+      background: #59bd09
+      +background-image(linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%))
+      text-transform: uppercase
+      display: block
+      margin: 10px auto 10px auto
+      font-size: 26px
+      border: none
+    button:hover
+      background: #c7ff81
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+

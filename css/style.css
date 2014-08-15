@@ -1,0 +1,910 @@
+/* line 5, D:/proj/idea/resqme/sass/style.sass */
+body {
+  font-family: "conv_pfdintextcondpro-light", Sans-serif;
+  background: white;
+  min-width: 1200px;
+  min-height: 200px;
+  color: #1e1e1e;
+}
+
+/* line 12, D:/proj/idea/resqme/sass/style.sass */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 21, D:/proj/idea/resqme/sass/style.sass */
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 26, D:/proj/idea/resqme/sass/style.sass */
+.fl {
+  float: left;
+}
+
+/* line 29, D:/proj/idea/resqme/sass/style.sass */
+.fr {
+  float: right;
+}
+
+/* line 32, D:/proj/idea/resqme/sass/style.sass */
+.cb {
+  clear: both;
+}
+
+/* line 34, D:/proj/idea/resqme/sass/style.sass */
+input.error, textarea.error {
+  box-shadow: 0 0 5px red !important;
+}
+
+/* line 36, D:/proj/idea/resqme/sass/style.sass */
+label.error {
+  display: none !important;
+}
+/* line 2, D:/proj/idea/resqme/sass/_placeholderText.scss */
+label.error.placeholder {
+  color: black;
+}
+/* line 3, D:/proj/idea/resqme/sass/_placeholderText.scss */
+label.error:-moz-placeholder {
+  color: black;
+}
+/* line 4, D:/proj/idea/resqme/sass/_placeholderText.scss */
+label.error::-moz-placeholder {
+  color: black;
+}
+/* line 5, D:/proj/idea/resqme/sass/_placeholderText.scss */
+label.error:-ms-input-placeholder {
+  color: black;
+}
+/* line 6, D:/proj/idea/resqme/sass/_placeholderText.scss */
+label.error::-webkit-input-placeholder {
+  color: black;
+}
+
+/* line 44, D:/proj/idea/resqme/sass/style.sass */
+header {
+  padding-top: 20px;
+  background: white;
+  background: url(../img/top_bg.png) center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 873px;
+}
+/* line 51, D:/proj/idea/resqme/sass/style.sass */
+header nav {
+  float: left;
+  margin: 5px auto 0;
+}
+/* line 57, D:/proj/idea/resqme/sass/style.sass */
+header nav ul {
+  font-size: 18px;
+  padding: 0;
+}
+/* line 60, D:/proj/idea/resqme/sass/style.sass */
+header nav ul li {
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  font-family: "conv_pfdintextcondpro-lightital";
+  border-right: solid 1px;
+  line-height: 1em;
+}
+/* line 67, D:/proj/idea/resqme/sass/style.sass */
+header nav ul li:last-child {
+  border: none;
+}
+/* line 69, D:/proj/idea/resqme/sass/style.sass */
+header nav ul li a {
+  color: inherit;
+  padding-right: 20px;
+}
+/* line 72, D:/proj/idea/resqme/sass/style.sass */
+header nav ul li a:hover {
+  text-decoration: none;
+}
+/* line 75, D:/proj/idea/resqme/sass/style.sass */
+header .addr {
+  text-align: right;
+  position: relative;
+  margin-top: 5px;
+  color: white;
+}
+/* line 80, D:/proj/idea/resqme/sass/style.sass */
+header .addr h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  padding-left: 10px;
+  display: inline-block;
+}
+/* line 86, D:/proj/idea/resqme/sass/style.sass */
+header .addr h2 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  font-family: "Conv_MagistralC-Bold";
+  line-height: 1em;
+}
+/* line 93, D:/proj/idea/resqme/sass/style.sass */
+header .addr h2:before {
+  content: "";
+  background: url(../img/ico_phone.png) left no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: -50px;
+}
+/* line 104, D:/proj/idea/resqme/sass/style.sass */
+header .top {
+  height: 740px;
+  padding-top: 10px;
+  position: relative;
+}
+/* line 109, D:/proj/idea/resqme/sass/style.sass */
+header .top .form {
+  width: 280px;
+  height: 500px;
+  margin-top: -50px;
+}
+/* line 114, D:/proj/idea/resqme/sass/style.sass */
+header .top .form .caption {
+  height: 230px;
+  padding-top: 20px;
+  background: -webkit-linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+  background: -moz-linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+  background: -o-linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+  background: linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+}
+/* line 119, D:/proj/idea/resqme/sass/style.sass */
+header .top .form .caption h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Conv_MagistralC-Bold";
+  text-transform: uppercase;
+  color: white;
+}
+/* line 128, D:/proj/idea/resqme/sass/style.sass */
+header .top .form .caption h4, header .top .form .caption .frm h5, .frm header .top .form .caption h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+}
+/* line 137, D:/proj/idea/resqme/sass/style.sass */
+header .top .secondLine {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+/* line 140, D:/proj/idea/resqme/sass/style.sass */
+header .top .secondLine .title {
+  line-height: 1.4em;
+  display: inline-block;
+  width: 270px;
+  font-size: 24px;
+  font-family: "Conv_MagistralC";
+  vertical-align: top;
+  padding-top: 22px;
+  margin-left: 28px;
+}
+/* line 149, D:/proj/idea/resqme/sass/style.sass */
+header .top .secondLine .title h2 {
+  margin: 0;
+  font-weight: normal;
+}
+/* line 154, D:/proj/idea/resqme/sass/style.sass */
+header .top .secondLine span {
+  color: #d23232;
+}
+/* line 156, D:/proj/idea/resqme/sass/style.sass */
+header .top .secondLine .logo {
+  display: inline-block;
+}
+/* line 158, D:/proj/idea/resqme/sass/style.sass */
+header .top .secondLine .logo p {
+  margin: -15px 0 0;
+}
+/* line 160, D:/proj/idea/resqme/sass/style.sass */
+header .top .secondLine .logo1 {
+  display: inline-block;
+  width: 120px;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+/* line 166, D:/proj/idea/resqme/sass/style.sass */
+header .top .secondLine .logo1.logo2 {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+/* line 169, D:/proj/idea/resqme/sass/style.sass */
+header .top .secondLine .logo1.logo2 p {
+  margin-top: 3px;
+}
+
+/* line 171, D:/proj/idea/resqme/sass/style.sass */
+.price {
+  position: absolute;
+  top: -40px;
+  left: 610px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  border-radius: 70px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background: #f58c00;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff5af), color-stop(100%, #f9e163));
+  background: -webkit-linear-gradient(#fff5af 0%, #f9e163 100%);
+  background: -moz-linear-gradient(#fff5af 0%, #f9e163 100%);
+  background: -o-linear-gradient(#fff5af 0%, #f9e163 100%);
+  background: linear-gradient(#fff5af 0%, #f9e163 100%);
+  width: 140px;
+  height: 140px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.3em;
+  padding-top: 50px;
+  z-index: 1;
+}
+/* line 186, D:/proj/idea/resqme/sass/style.sass */
+.price span {
+  font-size: 48px;
+  font-family: "Conv_MagistralBlackC";
+}
+
+/* line 189, D:/proj/idea/resqme/sass/style.sass */
+.timer {
+  font-size: 14px;
+  font-family: "conv_segoeprintregular";
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+}
+/* line 195, D:/proj/idea/resqme/sass/style.sass */
+.timer:before {
+  position: absolute;
+  content: "";
+  background: url(../img/ico_timer.png);
+  width: 40px;
+  height: 45px;
+  top: -14px;
+  left: -43px;
+}
+/* line 203, D:/proj/idea/resqme/sass/style.sass */
+.timer:after {
+  position: absolute;
+  content: "";
+  background: url(../img/arrow.png);
+  width: 111px;
+  height: 41px;
+  top: -5px;
+  left: -5px;
+}
+
+/* line 211, D:/proj/idea/resqme/sass/style.sass */
+.items_block {
+  position: relative;
+  margin-top: 60px;
+}
+/* line 214, D:/proj/idea/resqme/sass/style.sass */
+.items_block .shadow {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  z-index: 1;
+}
+/* line 219, D:/proj/idea/resqme/sass/style.sass */
+.items_block .item {
+  margin-left: -28px;
+  position: relative;
+  float: left;
+}
+/* line 223, D:/proj/idea/resqme/sass/style.sass */
+.items_block .item:first-child {
+  margin-left: 0;
+}
+/* line 225, D:/proj/idea/resqme/sass/style.sass */
+.items_block .item h3 {
+  color: white;
+  margin: 0;
+  display: inline-block;
+  font-family: Conv_MagistralC;
+  font-weight: normal;
+  font-size: 24px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  text-transform: uppercase;
+  text-align: right;
+}
+/* line 238, D:/proj/idea/resqme/sass/style.sass */
+.items_block .item h2 {
+  line-height: 0.74em;
+  color: white;
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+  font-family: "conv_pfdintextcondpro-medium";
+  font-size: 120px;
+}
+/* line 249, D:/proj/idea/resqme/sass/style.sass */
+.items_block .item2 h3 {
+  left: 50px;
+}
+/* line 251, D:/proj/idea/resqme/sass/style.sass */
+.items_block .item2 h2 {
+  left: 60px;
+}
+
+/* line 255, D:/proj/idea/resqme/sass/style.sass */
+.f-nav {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(245, 140, 0, 0.8);
+  bottom: auto;
+  padding-bottom: 15px;
+}
+
+/* line 267, D:/proj/idea/resqme/sass/style.sass */
+.counter {
+  width: 285px;
+  margin: auto auto 0;
+  display: block;
+  text-align: center;
+}
+/* line 273, D:/proj/idea/resqme/sass/style.sass */
+.counter p {
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 3px;
+  font-size: 14px;
+  position: static;
+  font-weight: normal;
+  font-family: "conv_segoeprintregular";
+}
+/* line 282, D:/proj/idea/resqme/sass/style.sass */
+.counter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+/* line 288, D:/proj/idea/resqme/sass/style.sass */
+.counter ul li {
+  float: left;
+  margin: 0 15px;
+  text-align: center;
+  position: relative;
+}
+/* line 294, D:/proj/idea/resqme/sass/style.sass */
+.counter ul li span {
+  text-shadow: 1px 1px 1px black;
+  display: block;
+  font-size: 36px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 3px;
+  width: 60px;
+  font-family: "conv_pfdintextcondpro-regular";
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background: #1d1d1d;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #595959), color-stop(50%, #3b3b3b), color-stop(50%, #1d1d1d), color-stop(100%, #1d1d1d));
+  background: -webkit-linear-gradient(#595959 0%, #3b3b3b 50%, #1d1d1d 50%, #1d1d1d 100%);
+  background: -moz-linear-gradient(#595959 0%, #3b3b3b 50%, #1d1d1d 50%, #1d1d1d 100%);
+  background: -o-linear-gradient(#595959 0%, #3b3b3b 50%, #1d1d1d 50%, #1d1d1d 100%);
+  background: linear-gradient(#595959 0%, #3b3b3b 50%, #1d1d1d 50%, #1d1d1d 100%);
+}
+
+/* line 317, D:/proj/idea/resqme/sass/style.sass */
+.frm {
+  height: 257px;
+  padding-top: 15px;
+  background: -webkit-linear-gradient(60deg, rgba(209, 49, 49, 0.2) 0%, rgba(245, 95, 95, 0.2) 100%);
+  background: -moz-linear-gradient(60deg, rgba(209, 49, 49, 0.2) 0%, rgba(245, 95, 95, 0.2) 100%);
+  background: -o-linear-gradient(60deg, rgba(209, 49, 49, 0.2) 0%, rgba(245, 95, 95, 0.2) 100%);
+  background: linear-gradient(60deg, rgba(209, 49, 49, 0.2) 0%, rgba(245, 95, 95, 0.2) 100%);
+}
+/* line 324, D:/proj/idea/resqme/sass/style.sass */
+.frm form input {
+  padding-left: 14px;
+  width: 220px;
+  height: 60px;
+  background: white;
+  display: block;
+  margin: auto auto 10px;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  border: 2px solid #f7f2c5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+/* line 336, D:/proj/idea/resqme/sass/style.sass */
+.frm form .button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  width: 240px;
+  height: 80px;
+  color: black;
+  text-transform: uppercase;
+  display: block;
+  margin: 12px auto auto;
+  font-family: "Conv_MagistralC-Bold";
+  font-size: 24px;
+  border: none;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-box-shadow: inset 0 -3px 0 rgba(250, 220, 40, 0.5);
+  -moz-box-shadow: inset 0 -3px 0 rgba(250, 220, 40, 0.5);
+  box-shadow: inset 0 -3px 0 rgba(250, 220, 40, 0.5);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff5af), color-stop(100%, #f9db27));
+  background: -webkit-linear-gradient(#fff5af 0%, #f9db27 100%);
+  background: -moz-linear-gradient(#fff5af 0%, #f9db27 100%);
+  background: -o-linear-gradient(#fff5af 0%, #f9db27 100%);
+  background: linear-gradient(#fff5af 0%, #f9db27 100%);
+}
+/* line 350, D:/proj/idea/resqme/sass/style.sass */
+.frm form .button:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9db27), color-stop(100%, #fff5af));
+  background: -webkit-linear-gradient(#f9db27 0%, #fff5af 100%);
+  background: -moz-linear-gradient(#f9db27 0%, #fff5af 100%);
+  background: -o-linear-gradient(#f9db27 0%, #fff5af 100%);
+  background: linear-gradient(#f9db27 0%, #fff5af 100%);
+}
+/* line 356, D:/proj/idea/resqme/sass/style.sass */
+.frm h4, .frm h5 {
+  text-align: center;
+  color: white;
+  margin: 5px 0 0;
+  font-weight: normal;
+  font-family: "Conv_pfdintextcondpro-light";
+  font-size: 18px;
+}
+/* line 363, D:/proj/idea/resqme/sass/style.sass */
+.frm h5 {
+  margin: 0;
+  font-size: 24px;
+}
+/* line 367, D:/proj/idea/resqme/sass/style.sass */
+.frm h5 span {
+  font-family: "conv_pfdintextcondpro-regular";
+}
+
+/* line 369, D:/proj/idea/resqme/sass/style.sass */
+.glass_left {
+  position: absolute;
+  content: "";
+  background: url(../img/glass_left.png) no-repeat;
+  width: 439px;
+  height: 568px;
+  z-index: 2;
+  top: -10px;
+  left: -360px;
+}
+
+/* line 378, D:/proj/idea/resqme/sass/style.sass */
+.glass_right {
+  position: absolute;
+  content: "";
+  background: url(../img/glass_right.png) no-repeat;
+  width: 439px;
+  height: 568px;
+  top: 100px;
+  right: 0;
+}
+
+/* line 388, D:/proj/idea/resqme/sass/style.sass */
+.resqme h2 {
+  font-size: 60px;
+  margin-top: -80px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Conv_MagistralC";
+}
+/* line 395, D:/proj/idea/resqme/sass/style.sass */
+.resqme h2 span {
+  font-family: "Conv_MagistralC-Bold";
+  color: #d23232;
+}
+/* line 398, D:/proj/idea/resqme/sass/style.sass */
+.resqme h2 span span {
+  color: #1e1e1e;
+}
+/* line 402, D:/proj/idea/resqme/sass/style.sass */
+.resqme .items .item {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  margin-left: 15px;
+}
+/* line 407, D:/proj/idea/resqme/sass/style.sass */
+.resqme .items .item:first-child {
+  margin-left: 0;
+}
+/* line 409, D:/proj/idea/resqme/sass/style.sass */
+.resqme .items .item h3 {
+  color: #d23232;
+  text-transform: uppercase;
+  font-family: "Conv_MagistralC";
+  font-size: 18px;
+}
+/* line 414, D:/proj/idea/resqme/sass/style.sass */
+.resqme .items .item p {
+  line-height: 1.5em;
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+}
+/* line 420, D:/proj/idea/resqme/sass/style.sass */
+.resqme .items img.ico_redArrow {
+  display: inline-block;
+  padding-top: 115px;
+  vertical-align: top;
+  margin-left: 40px;
+  margin-right: 27px;
+}
+
+/* line 427, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance {
+  background: url(../img/resq_bg.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 788px;
+  position: relative;
+}
+/* line 432, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .wrapper {
+  margin-top: -165px;
+}
+/* line 435, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  padding-top: 70px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Conv_MagistralC";
+}
+/* line 442, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance h2 span {
+  font-family: "Conv_MagistralC-Bold";
+  color: #d23232;
+}
+/* line 445, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance h2 span span {
+  color: #1e1e1e;
+}
+/* line 447, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .video {
+  position: relative;
+  margin-bottom: 50px;
+}
+/* line 450, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .video .play {
+  position: absolute;
+  top: 35px;
+  left: 75px;
+}
+/* line 454, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .video p {
+  display: inline-block;
+  font-family: "Conv_SegoePrintRegular";
+  font-size: 14px;
+  position: absolute;
+  top: 130px;
+  left: 70px;
+}
+/* line 461, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .video p:after {
+  content: "";
+  background: url(../img/ico_arrowToLeft.png);
+  width: 111px;
+  height: 41px;
+  position: absolute;
+  top: -8px;
+  left: -30px;
+}
+/* line 469, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_left {
+  width: 650px;
+}
+/* line 471, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_left .img_acq_block {
+  margin-bottom: 70px;
+}
+/* line 473, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_left .img_acq_block .img_acq_left {
+  display: inline-block;
+}
+/* line 475, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_left .img_acq_block .img_acq_left:last-child {
+  margin-right: 0;
+}
+/* line 477, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_left ul {
+  width: 600px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+  display: inline-block;
+}
+/* line 483, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_left ul li {
+  margin-bottom: 10px;
+}
+/* line 485, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_left p {
+  display: inline-block;
+  width: 600px;
+}
+/* line 488, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance h3 {
+  color: #d23232;
+  text-transform: uppercase;
+  font-family: "Conv_MagistralC-Bold";
+  font-size: 24px;
+  margin: 0;
+}
+/* line 494, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_right {
+  width: 300px;
+  margin-top: -40px;
+}
+/* line 497, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_right .item {
+  margin-top: 10px;
+}
+/* line 499, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_right .item:last-child {
+  margin-bottom: 10px;
+}
+/* line 501, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_right .item img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 505, D:/proj/idea/resqme/sass/style.sass */
+.acquaintance .acq_right .item p {
+  vertical-align: middle;
+  width: 180px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* line 517, D:/proj/idea/resqme/sass/style.sass */
+.mln {
+  clear: both;
+}
+/* line 519, D:/proj/idea/resqme/sass/style.sass */
+.mln h2 {
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* line 524, D:/proj/idea/resqme/sass/style.sass */
+.mln h2 span {
+  color: white;
+  font-weight: bold;
+  padding-top: 58px;
+  width: 175px;
+  height: 175px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background: -webkit-linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+  background: -moz-linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+  background: -o-linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+  background: linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+}
+/* line 535, D:/proj/idea/resqme/sass/style.sass */
+.mln .russia {
+  background: url(../img/russia.png) left center no-repeat;
+  height: 400px;
+  width: 1030px;
+  margin-left: -30px;
+}
+/* line 540, D:/proj/idea/resqme/sass/style.sass */
+.mln .russia .text {
+  font-family: "conv_pfdintextcondpro-regular";
+}
+/* line 542, D:/proj/idea/resqme/sass/style.sass */
+.mln .russia .text h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+}
+/* line 548, D:/proj/idea/resqme/sass/style.sass */
+.mln .russia .text h4, .mln .russia .text .frm h5, .frm .mln .russia .text h5 {
+  font-weight: normal;
+  text-align: left;
+  font-size: 17px;
+}
+/* line 552, D:/proj/idea/resqme/sass/style.sass */
+.mln .russia .text ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 50px;
+}
+/* line 556, D:/proj/idea/resqme/sass/style.sass */
+.mln .russia .text ul li {
+  display: block;
+  width: 430px;
+  height: 90px;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+/* line 563, D:/proj/idea/resqme/sass/style.sass */
+.mln .russia .text ul li.mln1 {
+  background: url(../img/mln1.png) left top no-repeat;
+}
+/* line 565, D:/proj/idea/resqme/sass/style.sass */
+.mln .russia .text ul li.mln2 {
+  background: url(../img/mln2.png) left top no-repeat;
+}
+
+/* line 570, D:/proj/idea/resqme/sass/style.sass */
+.bottom .items_block .shadow {
+  top: 95px;
+  left: 105px;
+}
+/* line 573, D:/proj/idea/resqme/sass/style.sass */
+.bottom .items_block .glass_bottom {
+  position: absolute;
+  top: 240px;
+  left: 380px;
+}
+/* line 578, D:/proj/idea/resqme/sass/style.sass */
+.bottom .form {
+  width: 280px;
+  height: 500px;
+  margin-top: -50px;
+}
+/* line 583, D:/proj/idea/resqme/sass/style.sass */
+.bottom .form .caption {
+  height: 230px;
+  padding-top: 20px;
+  background: -webkit-linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+  background: -moz-linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+  background: -o-linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+  background: linear-gradient(60deg, #f55f5f 0%, #d13131 100%);
+}
+/* line 588, D:/proj/idea/resqme/sass/style.sass */
+.bottom .form .caption h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Conv_MagistralC-Bold";
+  text-transform: uppercase;
+  color: white;
+}
+/* line 597, D:/proj/idea/resqme/sass/style.sass */
+.bottom .form .caption h4, .bottom .form .caption .frm h5, .frm .bottom .form .caption h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 608, D:/proj/idea/resqme/sass/style.sass */
+footer p {
+  font-size: 16px;
+  text-align: center;
+  margin: 5px;
+}
+/* line 612, D:/proj/idea/resqme/sass/style.sass */
+footer p:last-child {
+  margin-bottom: 15px;
+}
+
+/* line 615, D:/proj/idea/resqme/sass/style.sass */
+.feedback form {
+  width: 300px;
+}
+/* line 617, D:/proj/idea/resqme/sass/style.sass */
+.feedback form h3 {
+  text-align: center;
+  font-size: 20px;
+}
+/* line 620, D:/proj/idea/resqme/sass/style.sass */
+.feedback form input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding-left: 14px;
+  width: 285px;
+  height: 45px;
+  background: white;
+  display: block;
+  margin: auto auto 10px;
+  border: 1px solid darkgrey;
+}
+/* line 629, D:/proj/idea/resqme/sass/style.sass */
+.feedback form button {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  width: 285px;
+  height: 68px;
+  color: #59951d;
+  -webkit-box-shadow: inset 0 -2px 0 rgba(70, 130, 10, 0.25);
+  -moz-box-shadow: inset 0 -2px 0 rgba(70, 130, 10, 0.25);
+  box-shadow: inset 0 -2px 0 rgba(70, 130, 10, 0.25);
+  background: #59bd09;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #59bd09), color-stop(64.99%, #c7ff81), color-stop(100%, #e5ffc7));
+  background-image: -webkit-linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  background-image: -moz-linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  background-image: -o-linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  background-image: linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  text-transform: uppercase;
+  display: block;
+  margin: 10px auto 10px auto;
+  font-size: 26px;
+  border: none;
+}
+/* line 642, D:/proj/idea/resqme/sass/style.sass */
+.feedback form button:hover {
+  background: #c7ff81;
+}
